@@ -1,0 +1,54 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.products{
+    padding: 2rem;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: flex-start;
+justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.product{
+ 
+   height: 25rem;
+   width: 100%;
+text-decoration: none;
+color: white;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-direction: column;
+background: red;
+border-radius: 0.5rem;
+    
+}
+
+.product:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s all;
+}
+.product__title{
+font-size: 3rem;
+display: flex;
+justify-content: flex-start;
+
+}
+
+.product__image{
+    padding: 0.5rem;
+    border-radius: 1rem;
+margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    height: 10rem;
+    width: 100%;
+
+    
+}
