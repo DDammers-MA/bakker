@@ -25,13 +25,9 @@ $result = $conn->query($sql);
           
             <img src="<?php echo $row["img"]; ?>" alt="Image of <?php echo $row["Titel"]; ?>"
                 class="product__image">
-                  <p class="product__intro"><?php echo $row["introtekst"]; ?></p>
-
-               
-
-               
+                  <p class="product__intro"><?php echo $row["introtekst"]; ?></p>       
         </a>
-        <?php
+       <?php
             }
         } else {
             echo "No products found!";

@@ -2,14 +2,14 @@
 require_once("../src/config.php");
 
 if (isset($_GET['slug'])) {
-    // Use prepared statements to prevent SQL injection
+  
     $slug = $conn->real_escape_string($_GET['slug']);
     $sql = "SELECT * FROM producten WHERE slug = '$slug'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        // Output the product details here
+       
         ?>
 
         
