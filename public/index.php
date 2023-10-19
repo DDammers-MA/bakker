@@ -20,12 +20,12 @@ $result = $conn->query($sql);
         <?php
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-        ?><a href="/products/<?php echo $row["slug"]; ?>.php" class="product">
+        ?><a href="/single.php?slug=<?php echo $row["slug"]; ?>" class="product">
             <p class="product__title"><?php echo $row["Titel"]; ?></p>
-
+          
             <img src="<?php echo $row["img"]; ?>" alt="Image of <?php echo $row["Titel"]; ?>"
                 class="product__image">
-                <p class="product__intro"><?php echo $row["introtekst"]; ?></p>
+                  <p class="product__intro"><?php echo $row["introtekst"]; ?></p>
 
                
 
